@@ -1,0 +1,68 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  color: inherit;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+.wrapper {
+  max-width: 1220px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.controlPanel {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 0 50px 0;
+  gap: 10px;
+}
+
+.controlPanel button {
+  width: 100%;
+  background: #454b55;
+  font-size: 24px;
+  color: rgb(135, 186, 253);
+  border: 1px solid rgb(135, 186, 253);
+  padding: 5px;
+  white-space: nowrap;
+  user-select: none;
+}
+
+.controlPanel__img {
+  max-width: 200px;
+}
+
+.controlPanel__img img {
+  width: 100%;
+}
+
+.controlPanel button:hover {
+  transform: matrix(1, 0, -0, 1, 0, -3);
+}
+
+.controlPanel button:active {
+  transform: matrix(0.95, 0, -0, 0.95, 0, -3);
+}
+
+#textArea {
+  width: 100%;
+  border: 2px solid black;
+  resize: none;
+  padding: 20px;
+  font-size: 20px;
+  height: 100%;
+  font-weight: 400;
+}
+
+.imgUploadPanel {
+  position: absolute;
+  display: flex;
+}
+
+.imgUploadPanel textarea {
+  resize: none;
+}
